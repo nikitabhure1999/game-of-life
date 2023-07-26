@@ -13,7 +13,7 @@ pipeline {
 				                   sh "cd /mnt/data/gameoflife-web/target"
                                                    sh "mvn clean "
 				                   sh "mvn install"
-                                                   sh "cp -r  /mnt/data/g/gameoflife-web/target/gameoflife.war /mnt/servers/apache-tomcat-9.0.78/webapps"
+                                                   sh "cp -r  /mnt/data/gameoflife-web/target/gameoflife.war /mnt/servers/apache-tomcat-9.0.78/webapps"
 						   sh "chmod -R 777/mnt/servers/apache-tomcat-9.0.78/webapps"
                           					   
 					   
