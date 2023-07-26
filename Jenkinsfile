@@ -5,7 +5,7 @@ pipeline {
     stages{
 	      stage('deploy-index') {
 			      steps {
-		           sh "git clone 		      
+		           sh "git clone https://github.com/nikitabhure1999/game-of-life.git"		      
 			   sh "mvn install"	      
                            sh "mvn clean"
 		           sh "cp -r  target/gameoflife.war /mnt/game-of-life/game-of-life-web 		      
