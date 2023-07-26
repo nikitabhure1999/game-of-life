@@ -5,9 +5,11 @@ pipeline {
     stages{
 	      stage('deploy-index') {
 			      steps {
+		           sh "git clone 		      
+			   sh "mvn install"	      
                            sh "mvn clean"
-						               sh "chmod -R 777 gameoflife.war"
-                           sh "cp -r /mnt/gameoflife.war /mnt/apache-tomcat-9.0.76/webapps"
+		           sh "cp -r  target/gameoflife.war /mnt/game-of-life/game-of-life-web 		      
+			   sh "chmod -R 777 gameoflife.war"	      
                            sh "./startup.sh"						   
 					   
 					   
